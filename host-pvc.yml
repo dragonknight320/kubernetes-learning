@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: persistentVolumeClaim
+metadata:
+  name: host-pvc
+spec:
+  volumeName: host-pv
+  #there are many ways to claim persistent volumes see the documents
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi # can be request less than Volume
