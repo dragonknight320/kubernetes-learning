@@ -6,6 +6,7 @@ spec:
   capacity:
     storage: 1Gi
   volumeMode: Filesystem
+  storageClassname: standard
   accessModes:
     - ReadWriteOnce #Only Claim by ONE Node
  #   - ReadonlyMany #Can be Claim by mutliple Nodes
