@@ -7,6 +7,7 @@ spec:
   #there are many ways to claim persistent volumes see the documents
   accessModes:
     - ReadWriteOnce
+  storageClassname: standard
   resources:
     requests:
       storage: 1Gi # can be request less than Volume
